@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.nav {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 0;
+}
+.navicone {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+}
+.navicone a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+.navicone a::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navicone a:hover::after {
+  opacity: 1;
+}
+.navicone .iconnav {
+  letter-spacing: 15px;
+  width: 120px;
+}
+
+.navicone .iconnav a {
+  letter-spacing: 7px;
+  font-size: 20px;
+}
+.navicone .iconnav a:hover {
+  color: #f0cbb8;
+}
+@media screen and (max-width: 490px) {
+  .nav {
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+  }
+  .nav #pnav {
+    display: none;
+  }
+}
+
+.name a {
+  color: black;
+  font-family: "Sacramento";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 16px;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.home {
+  margin: 0px 15px;
+  padding-block-start: 100px;
+  display: flex;
+}
+.home-image {
+  border-radius: 40px 0px 0px 40px;
+  background-image: url("../img1.jpg");
+  width: 710px;
+  height: 650px;
+  background-position: 55%;
+  background-size: cover;
+  flex: 1;
+}
+
+.home-text {
+  border-radius: 0px 40px 40px 0px;
+  background-color: #f8efe6;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-text p {
+  padding: 35px 140px 0px 140px;
+}
+.home2 {
+  gap: 32px;
+  margin: 100px 200px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin-top: 100px;
+  display: grid;
+}
+
+.one {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.one img {
+  width: 300px;
+  height: 218px;
+}
+.one .title {
+  display: flex;
+  background-color: #f8efe6;
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.faitures {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+
+  padding: 20px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.feat i {
+  color: #f0cbb8;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .home2 {
+    gap: 32px;
+    margin: 100px 200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 100px;
+    display: grid;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50; /* This is a green color, you can change it */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+@media screen (max-width: 600px) {
+  @media screen and (max-width: 900px) .home2 {
+    gap: 32px;
+    margin: 100px 200px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin-top: 100px;
+    display: grid;
+  }
+}

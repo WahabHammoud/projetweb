@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "LD01 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "LD02 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "LD03 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "LD04 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "LD05 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "LD06 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "LD07 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "LD08 bague",
+    "price": 200,
+    "image": "bague.jpeg"
+  }
+]
